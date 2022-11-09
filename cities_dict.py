@@ -6,4 +6,9 @@ def cities_dict(cities:list):
     Returns:
         dict: dictionary with keys ordered by city name
     """
-    return
+    answer={}
+    for i in range(len(cities)):
+        answer.setdefault(i,cities[i])
+
+    return answer
+print(cities_dict(["Bukhara", "Khiva", "Namangan", "Samarkand", "Tashkent"]))
